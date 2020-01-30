@@ -1,0 +1,31 @@
+{
+  "name": "email_reset",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write src/*/**.ts",
+    "build": "webpack --mode development && cp src/appsscript.json dist/",
+    "push": "npm run build && clasp push",
+    "pull-def": "clasp pull && cp dist/appsscript.json src/"
+  },
+  "keywords": [],
+  "author": "Sergio García <sergio.garcia@aiesec.net>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/google-apps-script": "^1.0.10",
+    "@typescript-eslint/eslint-plugin": "^2.18.0",
+    "@typescript-eslint/parser": "^2.18.0",
+    "es3ify-webpack-plugin": "^0.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "gas-webpack-plugin": "^1.0.2",
+    "prettier": "^1.19.1",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.5",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  }
+}

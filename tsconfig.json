@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "ES3",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "baseUrl": "./",
+    "lib": ["esnext"],
+    "removeComments": true,
+    "moduleResolution": "node",
+  },
+  "include": [
+    "./src/**/*"
+  ]
+}
